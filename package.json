@@ -1,0 +1,43 @@
+{
+  "name": "vnv",
+  "version": "2.2.3",
+  "description": "a simple function validator for javascript types",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "test-only": "jest -t",
+    "build": "tsc",
+    "prepare": "npm run build",
+    "playground": "nodemon --watch '**/*.ts' --exec 'ts-node' playground/index.ts",
+    "format": "prettier --write src/**/*.ts"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/hivewire/vnv.git"
+  },
+  "author": "delashum",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/hivewire/vnv/issues"
+  },
+  "homepage": "https://gitlab.com/hivewire/vnv#readme",
+  "devDependencies": {
+    "@types/jest": "^25.2.3",
+    "jest": "^25.5.4",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.1.2",
+    "ts-jest": "^25.5.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.0.3"
+  },
+  "keywords": [
+    "validator",
+    "object",
+    "typescript",
+    "schema"
+  ]
+}
